@@ -49,4 +49,4 @@ Sou estudante de Engenharia Mecânica no CEFET/RJ, com experiência em **simula�
 ---
 
 📫 **Contato:** [gabrielcandidopassos@gmail.com](mailto:gabrielcandidopassos@gmail.com)  
-🔗 **LinkedIn:** [linkedin.com/in/gabrielcandidopassos](https://linkedin.com/in/gabrielcandidopassos)
+🔗 **LinkedIn:** [linkedin.com/in/gabrielcandidopassos](https://www.linkedin.com/in/gabriel-c%C3%A2ndido-passos-87ab321b4/)
