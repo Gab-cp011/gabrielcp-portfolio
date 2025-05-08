@@ -1,3 +1,5 @@
+import numpy as np 
+
 def create_time_features(df):
     """
     Gera variáveis derivadas de tempo e estatísticas temporais para modelagem de séries temporais.

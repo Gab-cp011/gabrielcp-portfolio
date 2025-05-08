@@ -34,6 +34,31 @@ def train_boosting_models(X_train, X_test, y_train, y_test, city_name):
         plt.tight_layout()
         plt.show()
 
+def get_boosting_models(params=None):
+    """
+    Retorna modelos de boosting configuráveis para uso em pipelines.
+    
+    Parâmetros:
+    - params (dict): Dicionário opcional com hiperparâmetros.
+    
+    Retorna:
+    - List[Tuple[Estimator, str]]
+    """
+    params = params or {}
+
+    xgb = XGBRegressor(n_estimators=params.get("n_estimators", 200),
+                       learning_rate=params.get("learning_rate", 0.1),
+                       max_depth=params.get("max_depth", 3),
+                       random_state=params.get("random_state", 42))
+
+    lgbm = LGBMRegressor(n_estimators=params.get("n_estimators", 200),
+                         learning_rate=params.get("learning_rate", 0.1),
+                         max_depth=params.get("max_depth", -1),
+                         random_state=params.get("random_state", 42),
+                         verbose=-1)
+
+    return [(xgb, "XGBoost"), (lgbm, "LightGBM")]
+
 
 # # main.py (exemplo de uso)
 # if __name__ == "__main__":
