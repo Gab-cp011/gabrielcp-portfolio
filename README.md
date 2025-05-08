@@ -1,6 +1,6 @@
 # 🧠  Portfolio – Gabriel Passos
 
-Este repositório reúne meus principais projetos de ciência de dados, aprendizado de máquina, com foco especial e meu projeto final de graduação. Os temas em foco são **séries temporais**, **simulações** e **análises técnicas aplicadas à engenharia**.
+Este repositório reúne meus principais projetos de ciência de dados, aprendizado de máquina e meu projeto final de graduação. Os temas em foco são **séries temporais**, **simulações** e **análises técnicas aplicadas à engenharia**.
 
 
 ---
@@ -23,7 +23,7 @@ Atualmente desenvolvo um **software de simulação da dinâmica longitudinal de 
 - Avaliar a influência de parâmetros do veículo.
 - Fornecer uma ferramenta versátil para análise do comportamento de um dado veículo em um determinado trajeto.
 
-> O código é validado com dados reais.
+> O código é validado com dados reais, de telemetria (GPS) de veículos.
 
 ---
 
