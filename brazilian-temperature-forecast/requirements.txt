@@ -1,0 +1,26 @@
+# Manipulação e análise de dados
+pandas
+numpy
+
+# Visualização
+matplotlib
+seaborn
+
+# Modelos clássicos
+scikit-learn
+
+# Séries temporais estatísticas
+statsmodels
+
+# Modelos probabilísticos
+prophet
+
+# Deep Learning
+tensorflow
+
+# Boosting
+xgboost
+lightgbm
+
+# Compatibilidade (evita erros com Prophet + dependências)
+pystan~=2.19.1.1

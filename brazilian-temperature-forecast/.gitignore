@@ -1,0 +1,39 @@
+# Arquivos temporários do Python
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.swp
+
+# Ambientes virtuais
+.venv/
+env/
+venv/
+
+# Arquivos de dados e saídas
+data/
+*.csv
+*.xlsx
+*.h5
+*.pkl
+*.joblib
+*.npy
+
+# Modelos treinados
+*.h5
+*.pt
+*.onnx
+
+# VS Code / Codespaces
+.vscode/
+.code-workspace
+
+# Outros
+.DS_Store
