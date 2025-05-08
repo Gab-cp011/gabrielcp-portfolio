@@ -1,68 +1,61 @@
-Simulador de Dinâmica Veicular em Python
+# 🏍️ Simulador de Dinâmica Veicular em Python
 
-✨ Sobre o Projeto
+## ✨ Sobre o Projeto
 
+Este é meu projeto final de graduação em Engenharia Mecânica no CEFET/RJ, focado em simulação física de veículos terrestres. Ele nasceu do TCC de João Marcos Cavalcante da Silva na UFRJ (2023), que desenvolveu uma versão funcional para carros com base na dinâmica longitudinal e lateral.
 
-Este é meu projeto final de graduação em Engenharia Mecânica no CEFET/RJ com foco em simulação física de veículos terrestres. Ele nasceu do Trabalho de Conclusão de Curso do João Marcos Cavalcante da Silva na UFRJ (2023), que desenvolveu uma versão funcional para carros com base em dinâmica longitudinal e lateral. A partir desse núcleo original, **estou dando continuidade ao projeto com o desenvolvimento de uma versão dedicada a motocicletas**.
+A partir desse núcleo original, **estou dando continuidade ao projeto com o desenvolvimento de uma versão dedicada a motocicletas**.
 
-O objetivo principal continua o mesmo: criar um simulador automotivo, didático e acessível — usando apenas Python puro, equações analíticas e fundamentos da engenharia mecânica.
+Nosso objetivo principal permanece: **criar um simulador automotivo didático, acessível e inteiramente em Python**, utilizando apenas equações analíticas e fundamentos da engenharia mecânica.
 
-🧩 Estrutura Modular
+---
 
+## 🧩 Estrutura Modular
 
-O simulador está organizado em alguns arquivos principais:
+| Arquivo                  | Função                                                                                      |
+| ------------------------ | ------------------------------------------------------------------------------------------- |
+| `loop.py`                | Coração da simulação. Realiza os cálculos ponto a ponto com base na física do movimento.    |
+| `roots.py`               | Resolve a equação de Torricelli adaptada com restrições físicas (potência, aderência etc.). |
+| `tools.py`               | Funções auxiliares: interpolação, cálculos de raios, curvas de potência, filtragens etc.    |
+| `velocity_correction.py` | Corrige velocidades quando os limites de aderência são ultrapassados em algum trecho.       |
+| `print_functions.py`     | Monitoramento e debug de simulações.                                                        |
 
-Arquivo	Função
-loop.py	    Coração da simulação. Realiza os cálculos ponto a ponto com base na física do movimento.
+---
 
-roots.py	Resolve a equação de Torricelli adaptada com restrições físicas (potência, aderência, geometria).
+## 🎯 Objetivo Atual: Motocicletas
 
-tools.py	Conjunto de funções auxiliares: interpolação de trajetos, cálculo de raios, inclinação, curvas de potência,         filtragens e processamentos de dados de telemetria.
+A missão atual é **adaptar e validar o simulador para veículos de duas rodas**, respeitando suas características dinâmicas específicas, usando modelagens simples e baseadas na literatura acadêmica.
 
-velocity_correction.py    executa a lógica de correção de velocidades em uma dada iteração para um trajeto que está sendo simulado, quando os limites de aderência do veículo não são respeitados no trecho correspondente 
+Também estão sendo implementadas melhorias de desempenho e organização do código.
 
-print_functions.py     Funções auxiliares para o monitoramento de simulações e debug do código 
+---
 
+## 🔍 Funcionalidades Já Implementadas (Versão Carro)
 
-🎯 Meu Objetivo (Motocicletas)
+* Simulação da velocidade ao longo de uma trajetória 3D com base em equações analíticas
+* Consideração de forças reais: peso, arrasto, rolamento, tração e sustentação
+* Validação física usando a Equação de Torricelli ponto a ponto
+* Respeito ao limite de aderência combinada (Elipse de Tração)
+* Simulação com ou sem marchas, incluindo RPM e curvas de potência realistas
+* Geração de DataFrame com: distância, velocidade, acelerações, força, tempo, marcha, etc.
 
+---
 
-A missão atual é adaptar e validar o simulador para veículos de duas rodas, respeitando as diferenças dinâmicas fundamentais entre carros e motos, utilizando também uma modelagem didática e simplificada, baseada na literatura acadêmica do tema. Além de realizar algumas melhorias e otimizações no algoritmo computacional 
+## 🛠 Como Usar
 
-🔍 O que o simulador já faz (versão carro)
+### 1. Instale as dependências:
 
-
-Simula a evolução de velocidade ao longo de uma trajetória 3D usando apenas equações analíticas
-
-Considera forças reais: peso, arrasto, rolamento, tração e sustentação
-
-Respeita os limites de aderência combinada (Elipse de Tração)
-
-Aplica a equação de Torricelli ponto a ponto, com validação física de cada solução
-
-Permite simulação com ou sem marchas, incluindo cálculo de RPM e curvas de potência realistas
-
-Gera DataFrame completo com: distância, velocidade, acelerações, força longitudinal, tempo, marcha, etc.
-
-🛠 Como Usar
-
-
-1. Instale as dependências:
-
-bash
-Copiar
-Editar
+```bash
 pip install numpy pandas matplotlib shapely scipy
+```
 
-2. Prepare os dados:
+### 2. Prepare os dados:
 
-Você precisará de listas com as coordenadas x, y, z da pista, além de parâmetros físicos e geométricos do veículo.
+Você precisa fornecer listas `x`, `y`, `z` com as coordenadas da pista e parâmetros do veículo.
 
-3. Rode a simulação:
+### 3. Rode a simulação:
 
-python
-Copiar
-Editar
+```python
 from loop_original import loop
 
 resultado = loop(
@@ -72,57 +65,45 @@ resultado = loop(
     marcha=True, Ps=[...], ns=[...],
     finaldrive=4.2, gearslist=[3.2, 2.1, 1.3, 1.0, 0.8], rw=0.3
 )
+```
 
-4. Visualize os resultados:
+### 4. Visualize os resultados:
 
-python
-Copiar
-Editar
+```python
 from tools_original import graph
 graph(resultado)
+```
 
-📘 Documentação Teórica
+---
 
+## 📘 Referência Teórica
 
-Toda a fundamentação física e computacional está documentada no TCC original do João Marcos Cavalcante (UFRJ, 2023), que cobre:
+Baseado no TCC original de João Marcos Cavalcante (UFRJ, 2023), com tópicos sobre:
 
-Forças atuantes (arrasto, peso, tração, rolamento, sustentação)
+* Forças atuantes: arrasto, peso, tração, rolamento, sustentação
+* Cinemática longitudinal e lateral
+* Elipse de tração (Círculo de Kamm)
+* Equação de Torricelli adaptada para restrições físicas
 
-Cinemática lateral e longitudinal
+A nova fase do projeto amplia esse conteúdo para motocicletas.
 
-Acoplamento dinâmico via Círculo de Kamm
+---
 
-Adaptação da equação de Torricelli para restrições de aceleração
+## 🧪 Saídas da Simulação
 
-Estou estendendo esse conteúdo agora para cobrir aspectos específicos da dinâmica de motocicletas.
+O `DataFrame` de saída contém:
 
-🧪 Saídas da Simulação
+* `Distance (m)`
+* `Speed (m/s)`
+* `Ax (m/s²)` — aceleração longitudinal
+* `Ay (m/s²)` — aceleração lateral
+* `Force (N)` — força resultante longitudinal
+* `Time (s)`
+* `Gears`, `GRatios`, `RPM` — se marchas estiverem ativadas
 
+---
 
-O programa retorna um pandas.DataFrame com as seguintes colunas:
+## 👤 Créditos
 
-Distance (m)
-
-Speed (m/s)
-
-Ax (m/s²) — aceleração longitudinal
-
-Ay (m/s²) — aceleração lateral
-
-Force (N) — força resultante longitudinal
-
-Time (s)
-
-Gears, GRatios, RPM — se simulação com marchas estiver ativada
-
-👤 Créditos
-
-
-João Marcos Cavalcante da Silva — autor original da versão para carro
-
-Gabriel Cândido Passos — responsável pela nova versão para motos e manutenção atual do projeto
-
-📜 Licença
-
-
-Uso livre para fins educacionais e acadêmicos. Para outros usos, entre em contato.
+* **João Marcos Cavalcante da Silva** — autor da versão original (carro)
+* **Gabriel Cândido Passos** — autor da versão atual para motocicletas e manutenção do projeto
