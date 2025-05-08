@@ -3,7 +3,7 @@ Simulador de Dinâmica Veicular em Python
 ✨ Sobre o Projeto
 
 
-Este é meu projeto final de graduação em Engenharia Mecânica no CEFET/RJ com foco em simulação física de veículos terrestres. Ele nasceu do Trabalho de Conclusão de Curso do João Marcos Cavalcante da Silva na UFRJ (2023), que desenvolveu uma versão funcional para carros com base em dinâmica longitudinal e lateral. A partir desse núcleo original, **estou dando continuidade ao projeto com o desenvolvimento de uma versão dedicada a motocicletas.
+Este é meu projeto final de graduação em Engenharia Mecânica no CEFET/RJ com foco em simulação física de veículos terrestres. Ele nasceu do Trabalho de Conclusão de Curso do João Marcos Cavalcante da Silva na UFRJ (2023), que desenvolveu uma versão funcional para carros com base em dinâmica longitudinal e lateral. A partir desse núcleo original, **estou dando continuidade ao projeto com o desenvolvimento de uma versão dedicada a motocicletas**.
 
 O objetivo principal continua o mesmo: criar um simulador automotivo, didático e acessível — usando apenas Python puro, equações analíticas e fundamentos da engenharia mecânica.
 
