@@ -42,6 +42,12 @@ Também estão sendo implementadas melhorias de desempenho e organização do c�
 
 ---
 
+🧪 Exemplo de Simulação
+
+Este repositório inclui um exemplo de simulação validada, que compara os resultados do modelo com dados reais extraídos do jogo Project CARS 2. O arquivo Analise.html documenta essa análise e pode ser visualizado diretamente clicando aqui(./Analise.html).
+
+A comparação serve como uma validação empírica do modelo proposto e ilustra sua capacidade de representar a dinâmica de um veículo de forma plausível e realista.
+
 ## 🛠 Como Usar
 
 ### 1. Instale as dependências:
