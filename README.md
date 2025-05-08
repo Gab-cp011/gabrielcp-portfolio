@@ -1,5 +1,7 @@
 # 🧠  Portfolio – Gabriel Passos
 
+Bem vindo !
+
 Este repositório reúne meus principais projetos de ciência de dados, aprendizado de máquina e meu projeto final de graduação. Os temas em foco são **séries temporais**, **simulações** e **análises técnicas aplicadas à engenharia**.
 
 
