@@ -10,7 +10,7 @@ Este repositório reúne meus principais projetos de ciência de dados, aprendiz
 ### 🔸 [01 - Motorcycle Dynamics Simulator](./01_motorcycle dynamics simulator)
 Estudo do comportamento energético urbano com dados reais de medidores inteligentes.
 
-### 🔸 [02 - Brazil Temperature Forecast](./02_brazilian-temperature-forecast)
+### 🔸 [02 - Brazil Temperature Forecast](./brazilian-temperature-forecast)
 Modelagem de séries temporais climáticas de cidades brasileiras. Análise de tendências e previsão com Prophet.
 
 ---
