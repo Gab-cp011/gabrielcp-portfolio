@@ -1,4 +1,4 @@
-# 🧠 Portfolio – Gabriel Passos
+# 🧑‍💻 Portfolio – Gabriel Passos
 
 Bem-vindo!
 
