@@ -9,7 +9,7 @@ Este repositório reúne meus principais projetos de ciência de dados, aprendiz
 
 ## 📂 Projetos
 
-### 🔸 [01 - Motorcycle Dynamics Simulator](./01_motorcycle dynamics simulator)
+### 🔸 [01 - Motorcycle Dynamics Simulator](./motorcycle-dynamics-simulator)
 Estudo do comportamento energético urbano com dados reais de medidores inteligentes.
 
 ### 🔸 [02 - Brazil Temperature Forecast](./brazilian-temperature-forecast)
