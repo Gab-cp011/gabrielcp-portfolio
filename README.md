@@ -7,17 +7,11 @@ Este repositório reúne meus principais projetos de ciência de dados, aprendiz
 
 ## 📂 Projetos
 
-### 🔸 [01 - Store Sales Forecasting](./01_store_sales_forecasting)
-Previsão de vendas com Prophet, LSTM e ARIMA. Avaliação de desempenho por RMSE e visualizações interativas.
-
-### 🔸 [02 - Household Power Consumption](./02_household_power_consumption)
-Análise e modelagem do consumo elétrico em residência. Modelos univariados e multivariados aplicados.
-
-### 🔸 [03 - Brazil Temperature Forecast](./03_brazil_temperature_forecast)
-Modelagem de séries temporais climáticas de cidades brasileiras. Análise de tendências e previsão com Prophet.
-
-### 🔸 [04 - London Smart Meters](./04_london_smart_meters)
+### 🔸 [01 - Motorcycle Dynamics Simulator](./01_motorcycle dynamics simulator)
 Estudo do comportamento energético urbano com dados reais de medidores inteligentes.
+
+### 🔸 [02 - Brazil Temperature Forecast](./02_brazil_temperature_forecast)
+Modelagem de séries temporais climáticas de cidades brasileiras. Análise de tendências e previsão com Prophet.
 
 ---
 
