@@ -2,11 +2,13 @@ Simulador de Dinâmica Veicular em Python
 
 ✨ Sobre o Projeto
 
+
 Este é meu projeto final de graduação em Engenharia Mecânica no CEFET/RJ com foco em simulação física de veículos terrestres. Ele nasceu do Trabalho de Conclusão de Curso do João Marcos Cavalcante da Silva na UFRJ (2023), que desenvolveu uma versão funcional para carros com base em dinâmica longitudinal e lateral. A partir desse núcleo original, **estou dando continuidade ao projeto com o desenvolvimento de uma versão dedicada a motocicletas.
 
 O objetivo principal continua o mesmo: criar um simulador automotivo, didático e acessível — usando apenas Python puro, equações analíticas e fundamentos da engenharia mecânica.
 
 🧩 Estrutura Modular
+
 
 O simulador está organizado em alguns arquivos principais:
 
@@ -24,9 +26,12 @@ print_functions.py     Funções auxiliares para o monitoramento de simulações
 
 🎯 Meu Objetivo (Motocicletas)
 
+
 A missão atual é adaptar e validar o simulador para veículos de duas rodas, respeitando as diferenças dinâmicas fundamentais entre carros e motos, utilizando também uma modelagem didática e simplificada, baseada na literatura acadêmica do tema. Além de realizar algumas melhorias e otimizações no algoritmo computacional 
 
 🔍 O que o simulador já faz (versão carro)
+
+
 Simula a evolução de velocidade ao longo de uma trajetória 3D usando apenas equações analíticas
 
 Considera forças reais: peso, arrasto, rolamento, tração e sustentação
@@ -40,6 +45,7 @@ Permite simulação com ou sem marchas, incluindo cálculo de RPM e curvas de po
 Gera DataFrame completo com: distância, velocidade, acelerações, força longitudinal, tempo, marcha, etc.
 
 🛠 Como Usar
+
 
 1. Instale as dependências:
 
@@ -77,6 +83,7 @@ graph(resultado)
 
 📘 Documentação Teórica
 
+
 Toda a fundamentação física e computacional está documentada no TCC original do João Marcos Cavalcante (UFRJ, 2023), que cobre:
 
 Forças atuantes (arrasto, peso, tração, rolamento, sustentação)
@@ -90,6 +97,7 @@ Adaptação da equação de Torricelli para restrições de aceleração
 Estou estendendo esse conteúdo agora para cobrir aspectos específicos da dinâmica de motocicletas.
 
 🧪 Saídas da Simulação
+
 
 O programa retorna um pandas.DataFrame com as seguintes colunas:
 
@@ -109,10 +117,12 @@ Gears, GRatios, RPM — se simulação com marchas estiver ativada
 
 👤 Créditos
 
+
 João Marcos Cavalcante da Silva — autor original da versão para carro
 
 Gabriel Cândido Passos — responsável pela nova versão para motos e manutenção atual do projeto
 
 📜 Licença
+
 
 Uso livre para fins educacionais e acadêmicos. Para outros usos, entre em contato.
