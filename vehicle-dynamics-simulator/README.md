@@ -30,14 +30,15 @@ Também estão sendo implementadas melhorias de desempenho e organização do c�
 
 ---
 
-## 🔍 Funcionalidades Já Implementadas (Versão Carro)
+## 🔍 Funcionalidades Já Implementadas
 
-* Simulação da velocidade ao longo de uma trajetória 3D com base em equações analíticas
+* Simulação da velocidade ao longo de uma trajetória 3D ou 2D com base em equações analíticas
 * Consideração de forças reais: peso, arrasto, rolamento, tração e sustentação
-* Validação física usando a Equação de Torricelli ponto a ponto
 * Respeito ao limite de aderência combinada (Elipse de Tração)
 * Simulação com ou sem marchas, incluindo RPM e curvas de potência realistas
 * Geração de DataFrame com: distância, velocidade, acelerações, força, tempo, marcha, etc.
+* Implementação de funções para tratar dados de telemetria (que muitas vezes são input do algoritmo)
+* Plots e cálculos de métricas para validação do modelo
 
 ---
 
