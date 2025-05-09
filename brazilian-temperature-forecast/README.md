@@ -1,6 +1,6 @@
 # 🌡️ Brazilian Temperature Forecast
 
-Previsão mensal de temperatura em cidades brasileiras utilizando diferentes modelos de séries temporais: estatísticos, regressivos, neurais e probabilísticos. A análise completa se encontra na notebook **pipeline**
+Previsão mensal de temperatura em cidades brasileiras utilizando diferentes modelos de séries temporais: estatísticos, regressivos, neurais e probabilísticos. A análise completa se encontra na notebook [**pipeline**](./notebooks/pipeline.ipynb), na pasta notebooks. 
 
 ---
 
